@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Epreuve - Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil">
+      <h1>Bienvenue</h1>
+      <p>Page sémantique de l'épreuve.</p>
+    </section>
+    <article>
+      <h2>Article</h2>
+      <p>Contenu de l'article.</p>
+    </article>
+
+    <form action="#" method="post">
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" required />
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" name="password" minlength="8" required />
+
+      <label for="pays">Pays</label>
+      <select id="pays" name="pays" required>
+        <option value="">-- Choisir --</option>
+        <option value="bj">Bénin</option>
+        <option value="tg">Togo</option>
+        <option value="sn">Sénégal</option>
+      </select>
+
+      <button type="submit">S'inscrire</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Epreuve</p>
+  </footer>
+</body>
+</html>
