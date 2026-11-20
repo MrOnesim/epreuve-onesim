@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Toggle Dark</title>
+  <style>
+    body { transition: background 0.3s, color 0.3s; }
+    body.dark { background: #111; color: #eee; }
+  </style>
+</head>
+<body>
+  <button id="toggle">Toggle</button>
+  <script>
+    document.getElementById('toggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
