@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carte produit</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#2563eb" }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="p-8 bg-gray-100">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+      <img src="https://via.placeholder.com/400x300" alt="Produit" class="w-full h-48 object-cover" />
+      <div class="p-4">
+        <h3 class="text-lg font-bold">Produit A</h3>
+        <p class="text-gray-600">12 000 FCFA</p>
+        <button class="mt-3 bg-primary hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+          Ajouter au panier
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
